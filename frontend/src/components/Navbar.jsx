@@ -42,7 +42,8 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Order on WhatsApp
+              <span className="nav__wa-full">Order on WhatsApp</span>
+              <span className="nav__wa-short">Order</span>
             </a>
             <button
               className="nav__toggle"

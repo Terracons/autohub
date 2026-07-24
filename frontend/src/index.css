@@ -57,6 +57,7 @@ button { font-family: inherit; cursor: pointer; }
 .btn-outline:hover { border-color: var(--brand); color: var(--brand); }
 .btn-wa { background: var(--wa); color: #fff; }
 .btn-wa:hover { background: var(--wa-dark); box-shadow: var(--shadow); }
+.nav__wa-short { display: none; }
 .btn-lg { padding: 15px 30px; font-size: 16px; }
 .btn-block { width: 100%; }
 
@@ -268,6 +269,7 @@ button { font-family: inherit; cursor: pointer; }
     display: flex; position: absolute; top: 68px; left: 0; right: 0; flex-direction: column;
     background: #fff; padding: 16px 20px; gap: 14px; border-bottom: 1px solid var(--border); box-shadow: var(--shadow);
   }
+  .nav__actions .btn-wa { padding: 8px 14px; font-size: 12.5px; gap: 6px; }
 }
 @media (max-width: 560px) {
   .cat-grid { grid-template-columns: repeat(2, 1fr); }
@@ -277,4 +279,9 @@ button { font-family: inherit; cursor: pointer; }
   .cta-band { padding: 34px 22px; }
   .wa-fab { width: 46px; height: 46px; font-size: 22px; bottom: 16px; right: 16px; }
   .wa-fab svg { width: 22px; height: 22px; }
+}
+@media (max-width: 420px) {
+  .nav__wa-full { display: none; }
+  .nav__wa-short { display: inline; }
+  .nav__actions .btn-wa { padding: 8px 12px; }
 }
